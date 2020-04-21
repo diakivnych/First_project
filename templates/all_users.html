@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Students</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        {% for i in ('1', '2', '3', '4', '5', '6') %}
+        <ol>
+            <h3 align="middle">{{human[i].first_name}} {{human[i].last_name}}</h3>
+            <p align="middle"><i>age = {{human[i].age}}, job = {{human[i].job}}, hobby = {{human[i].hobby}}</i></p>
+            <p align="middle">
+            <img src="{{url_for('static', filename='img'+i+'.jpg')}}" 
+            alt="sasatzhopu" style="width:300px;height:300px;"/>
+        </p>
+        <br>
+        </ol>
+        {% endfor %}
+        <h2 align="middle">Hello guys!:)</h2>
+    </body>
+</html>

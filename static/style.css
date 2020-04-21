@@ -1,0 +1,10 @@
+html {
+  background-color: paleturquoise;
+  font-size: 40px;
+}
+
+body {
+  background: rgb(255, 160, 7);
+  padding: 20px;
+  border: 1px solid rgb(236, 0, 0);
+}
