@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register new person</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <form action=""></form>
+        <fieldset>
+            <legend> Register </legend>
+            <label><input type="text" required> first_name</label><br>
+            <label><input type="text" required> last_name</label><br>
+            <label><input type="text" required> age</label><br>
+            <label><textarea></textarea> hobby</label><br>
+            <select name="country">
+                <option>Select your country</option>
+                <option value="Россия">Turkmenistan</option> 
+                <option value="Украина">Turkmenistan</option> 
+                <option value="Беларусь">Turkmenistan</option>
+                <option value="Беларусь">Turkmenistan</option> 
+              </select><br> 
+            <label><input type="image" name="submitbutton" alt="insert image" 
+            src="{{url_for('static', filename='img1.jpg')}}" width="25:px" height="25:px"> image</label><br>
+            <input type="text" id="login"><label for="qwerty"> login</label><br>
+            <input type="password" id="password"><label for="qwerty"> password</label><br>
+            <input type="submit" value="Нажимай))0)">
+        </fieldset>
+    </body>
+</html>

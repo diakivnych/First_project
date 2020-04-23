@@ -22,9 +22,19 @@ def all_users():
     return render_template("all_users.html", 
                             human = db)
 
+@app.route('/')
+def hello():
+    return "Hello World"
+
+@app.route('/users/new_user')
+def add_user():
+    return render_template("new_user.html")
+
+@app.route('/users/author')
+def author():
+    return render_template("author.html")
+
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
 
 db.close()
-
-#<link rel=stylesheet type=text/css href="{{ url_for('css', filename='style.css') }}">
