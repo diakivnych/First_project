@@ -33,7 +33,6 @@ Pygments==2.3.1
 PyGObject==3.34.0
 PyInstaller==3.6
 pylint==1.9.5
-pyTelegramBotAPI==3.6.7
 python-espeak==0.5
 pyttsx==1.1
 pyttsx3==2.7
