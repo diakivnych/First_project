@@ -1,0 +1,7 @@
+<body>
+    Welcome
+    {%
+    response.write(request.form("first_name"))
+    response.wirte(" " & request.form("last_name"))
+    %}
+</body>

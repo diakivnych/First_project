@@ -11,13 +11,13 @@
             {% if id - 1 > 0 %}
                 <a href="{{id-1}}"><b>Previous</b></a>
             {% else %}
-                <a href="{{6}}"><b>Previous</b></a>
+                <a href="{{max_id}}"><b>Previous</b></a>
             {% endif %}
 
             <img src="{{url_for('static', filename=address)}}" 
             style="width:300px;height:300px;"/>
             
-            {% if id + 1 < 7%}
+            {% if id + 1 < max_id + 1%}
                 <a href="{{id+1}}"><b>Next</b></a>
             {% else %}
                 <a href="{{1}}"><b>Next</b></a>

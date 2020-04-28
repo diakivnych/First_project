@@ -2,9 +2,35 @@
 <html>
     <head>
         <title>Students</title>
-        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style2.css') }}">
     </head>
     <body>
-        
+        <div class="wrapper">
+            <div class="header">  
+                    <a href="users/author">Вхід</a>
+                    <a href="users/new_user">Реєстрація</a>
+            </div>
+            <div class="row">
+                <div class="sidebar1">
+                </div>
+                <div class="content">
+                    
+                    {% for i in range(max_id) %}
+                    <ol>
+                        {% set j = (i+1)|string %}
+                        <p>{{human[j].first_name}} {{human[j].last_name}}</p>
+                        <p><i>age = {{human[j].age}}, job = {{human[j].job}}, hobby = {{human[j].hobby}}</i></p>
+                        <p>
+                            <img class="images" src="{{url_for('static', filename='img'+j+'.jpg')}}" 
+                            alt="sasatzhopu" />
+                        </p>
+                        <br>
+                    </ol>
+                    {% endfor %}
+                </div>
+                <div class="sidebar2">
+                </div>
+            </div>
+        </div>
     </body>
 </html>

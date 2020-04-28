@@ -1,34 +1,20 @@
-/*
-*{
-  font-size: 30px;
-  text-align: center;
-  height: 10000px;
-}
-.header{
-  background-color: rgb(126, 126, 126);
-  height: 50px;
-  margin-bottom: 5px;
+html {
+  background-color: paleturquoise;
+  font-size: 40px;
 }
 
-.sidebar1{
-  width: 15%;
-  background-color: tomato;
-  float: left;
-  min-height: 500px
+body {
+  background: rgb(255, 160, 7);
+  padding: 20px;
+  border: 1px solid rgb(236, 0, 0);
+}
+html {
+  background-color: paleturquoise;
+  font-size: 40px;
 }
 
-.sidebar2{
-  width: 15%;
-  background-color: tomato;
-  float: left;
-  min-height: 500px;
+body {
+  background: rgb(255, 160, 7);
+  padding: 20px;
+  border: 1px solid rgb(236, 0, 0);
 }
-.content{
-  width: 69%;
-  background-color:rgb(255, 160, 7);
-  float: left;
-  min-height: 500px;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-}
-*/
