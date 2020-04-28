@@ -30,16 +30,10 @@ peewee==3.13.1
 pycrypto==2.6.1
 pygame==1.9.6
 Pygments==2.3.1
-PyGObject==3.34.0
 pyxdg==0.25
 PyYAML==5.1.2
 requests==2.23.0
-SecretStorage==2.3.1
-singledispatch==3.4.0.3
 six==1.12.0
 soupsieve==1.9.5
-SpeechRecognition==3.8.1
 urllib3==1.25.8
 virtualenv==15.1.0
-Werkzeug==1.0.0
-wrapt==1.12.1
